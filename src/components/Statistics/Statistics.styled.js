@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Section = styled.section`
 width: 400px;
 background-color: white;
-border: 1px solid gray;
+border: 1px solid #808080;
 border-radius: 5px;
 padding-top: 20px;
 margin: 0 0 20px 20px`
@@ -28,18 +28,19 @@ export const ListEl = styled.li`
 flex-grow: 1;
 padding: 10px 0;
 text-align: center;
-background-color: #${props => props.backgroundColor};`
+background-color: #${props => {
+        if (props.backgroundColor === "ffffff") Math.floor(Math.random() * 16777215).toString(16)
+        return props.backgroundColor
+    }
+    };
+color: #ffffff;`
 
 export const Label = styled.span`
 display: block;
-text-align: center;
 font-size: 14px;
-color: white;
 `
 
 export const Percentage = styled.span`
 display:block;
-text-align: center;
 font-size: 18px;
-color: white;
 `

@@ -25,5 +25,5 @@ export const Stats = ({ stats: { followers, views, likes } }) => {
 };
 
 Stats.propTypes = {
-  stats: PropTypes.objectOf(PropTypes.number),
+  stats: PropTypes.objectOf(PropTypes.number).isRequired,
 };

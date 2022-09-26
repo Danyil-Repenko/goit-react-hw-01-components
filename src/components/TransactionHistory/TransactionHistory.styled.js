@@ -8,19 +8,19 @@ width: 600px;
 margin: 0 0 20px 20px;`
 
 export const TitleEl = styled.td`
-border: 1px solid silver;
+border: 1px solid #c0c0c0;
   padding: 12px 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: blue;
-  color: white;`
+  background-color: #04d4fe;
+  color: #ffffff;`
 
 export const Row = styled.tr`
 &:nth-child(even){background-color: #f2f2f2;};`
 
 export const StatisticEl = styled.th`
-border: 1px solid silver;
+border: 1px solid #c0c0c0;
   padding: 8px;
   font-weight: normal;
   text-transform: capitalize;`

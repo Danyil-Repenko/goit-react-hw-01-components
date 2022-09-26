@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
 margin: 20px 0 20px 20px;
 width: 250px;
 height: auto;
-border: 1px solid gray;
+border: 1px solid #808080;
 border-radius: 4px;
 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;`
 
@@ -26,12 +26,12 @@ export const ProfileText = styled.p`
 text-align: center;
 margin: 10px 0 0 0;
 font-size: 16px;
-color: grey;
+color: #808080;
 `
 
 export const ProfileName = styled(ProfileText)`
 margin: 0%;;
 font-size: 20px;
 font-weight: bold;
-color: black`
+color: #000000;`
 
