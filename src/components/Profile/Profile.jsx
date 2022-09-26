@@ -1,18 +1,25 @@
 import PropTypes from 'prop-types';
 import { Stats } from 'components/Profile/Stats/Stats.jsx';
+import {
+  Wrapper,
+  ProfileMainPart,
+  ProfilePic,
+  ProfileText,
+  ProfileName,
+} from 'components/Profile/Profile.styled';
 
 export const Profile = ({ avatar, username, tag, location, stats }) => {
   return (
-    <div>
-      <div>
-        <img src={avatar} alt="User avatar" />
-        <p>{username}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
-      </div>
+    <Wrapper>
+      <ProfileMainPart>
+        <ProfilePic src={avatar} alt="User avatar" />
+        <ProfileName>{username}</ProfileName>
+        <ProfileText>@{tag}</ProfileText>
+        <ProfileText>{location}</ProfileText>
+      </ProfileMainPart>
 
       <Stats stats={stats} />
-    </div>
+    </Wrapper>
   );
 };
 
